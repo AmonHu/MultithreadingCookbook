@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 
+/*
+ * 1.3 暂停线程(Thread.Sleep)
+ */
 namespace Ch01Recipe2
 {
     class Program
@@ -18,6 +21,9 @@ namespace Ch01Recipe2
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// 打印1-10数字
+        /// </summary>
         static void PrintNumbers()
         {
             Console.WriteLine("Starting...");
@@ -27,6 +33,9 @@ namespace Ch01Recipe2
             }
         }
 
+        /// <summary>
+        /// 打印1-10数字(带延时)
+        /// </summary>
         static void PrintNumbersWithDelay()
         {
             Console.WriteLine("Starting...");

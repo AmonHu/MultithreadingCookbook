@@ -7,13 +7,17 @@ using System.Threading.Tasks;
 using static System.Console;
 using static System.Threading.Thread;
 
+/*
+ * 1.5 终止线程(Thread.Abort)
+ * 不推荐使用Thread.Abort结束线程
+ */
 namespace Ch01Recipe4
 {
     class Program
     {
         static void Main(string[] args)
         {
-            WriteLine("Starting progam...");
+            WriteLine("Starting program...");
             Thread t = new Thread(PrintNumbersWithDelay);
             t.Start();
             Thread.Sleep(TimeSpan.FromSeconds(6));

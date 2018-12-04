@@ -1,11 +1,18 @@
 ﻿using System;
 using System.Threading;
 
+/*
+ * 1.2 使用C#创建线程
+ */
 
 namespace Ch01Recipe1
 {
     class Program
     {
+        /// <summary>
+        /// Main函数
+        /// </summary>
+        /// <param name="args">系统参数</param>
         static void Main(string[] args)
         {
             //Console.WriteLine("Hello World!");
@@ -20,6 +27,9 @@ namespace Ch01Recipe1
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// 打印1-10数字
+        /// </summary>
         static void PrintNumbers()
         {
             Console.WriteLine("Starting...");

@@ -7,6 +7,9 @@ using System.Threading;
 using static System.Console;
 using static System.Threading.Thread;
 
+/*
+ * 1.4 线程等待(Thread.Join)
+ */
 namespace Ch01Recipe3
 {
     class Program
@@ -21,6 +24,9 @@ namespace Ch01Recipe3
         }
 
 
+        /// <summary>
+        /// 打印1-10数字(带延时)
+        /// </summary>
         static void PrintNumbersWithDelay()
         {
             Console.WriteLine("Starting...");

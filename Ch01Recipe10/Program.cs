@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 using static System.Console;
 using static System.Threading.Thread;
 
+
+/*
+ * 1.11 使用Monitor类锁定资源
+ */
 namespace Ch01Recipe10
 {
     class Program
@@ -45,7 +49,7 @@ namespace Ch01Recipe10
 
                 lock (lock2)
                 {
-                    WriteLine("Acquired a pretected resource successfully");
+                    WriteLine("Acquired a protected resource successfully");
                 }
             }
 

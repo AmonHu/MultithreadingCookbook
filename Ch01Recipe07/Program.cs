@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+/*
+ * 1.8 前台线程和后台线程(Thread.IsBackground)
+ */
 namespace Ch01Recipe7
 {
     class Program

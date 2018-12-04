@@ -1,13 +1,11 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System;
 using System.Threading;
-using System.Threading.Tasks;
 using static System.Console;
 using static System.Threading.Thread;
 
+/*
+ * 1.12 异常处理
+ */
 namespace Ch01Recipe11
 {
     class Program

@@ -5,13 +5,16 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+/*
+ * 1.6 检测线程状态(Thread.ThreadState)
+ */
 namespace Ch01Recipe5
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Starting progam...");
+            Console.WriteLine("Starting program...");
             Thread t = new Thread(PrintNumbersWithStatus);
             Thread t2 = new Thread(DoNothing);
             Console.WriteLine(t.ThreadState.ToString());

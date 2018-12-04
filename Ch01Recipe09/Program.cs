@@ -6,6 +6,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using static System.Console;
 
+/*
+ * 1.10 使用C#中的lock关键字
+ */
 namespace Ch01Recipe9
 {
     class Program

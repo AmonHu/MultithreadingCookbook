@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+/*
+ * 1.7 线程优先级(ThreadPriority)
+ */
 namespace Ch01Recipe6
 {
     class Program

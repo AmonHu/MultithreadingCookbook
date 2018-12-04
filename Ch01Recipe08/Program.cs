@@ -5,12 +5,16 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+/*
+ * 1.9 向线程传递参数
+ */
 namespace Ch01Recipe8
 {
     class Program
     {
         static void Main(string[] args)
         {
+            // 通过类字段传递
             var sample = new ThreadSample(10);
 
             var threadOne = new Thread(sample.CountNumbers);
@@ -20,6 +24,7 @@ namespace Ch01Recipe8
 
             Console.WriteLine("--------------------------");
 
+            // Start传递
             var threadTwo = new Thread(Count);
             threadTwo.Name = "ThreadTwo";
             threadTwo.Start(8);
@@ -27,7 +32,8 @@ namespace Ch01Recipe8
 
             Console.WriteLine("--------------------------");
 
-            var threadThree = new Thread(()=>CountNumbers(12));
+            // Lambda表达式
+            var threadThree = new Thread(() => CountNumbers(12));
             threadThree.Name = "ThreadThree";
             threadThree.Start();
             threadThree.Join();
