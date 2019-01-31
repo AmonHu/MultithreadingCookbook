@@ -53,7 +53,5 @@ namespace Ch01Recipe11
                 WriteLine($"Exception handled: { ex.Message }");
             }
         }
-
-
     }
 }
